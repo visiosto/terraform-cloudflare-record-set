@@ -18,4 +18,4 @@ jobs:
     uses: visiosto/workflows/.github/workflows/lint-terraform-module.yml@v0.2.0
     with:
       terraform-version: ${{ matrix.terraform-version }}
-      token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+      token: ${{ secrets.GIT_TOKEN }}
