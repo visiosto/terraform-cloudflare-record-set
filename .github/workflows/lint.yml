@@ -15,7 +15,7 @@ jobs:
     strategy:
       matrix:
         terraform-version: ["~1.0.0", "latest"]
-    uses: visiosto/workflows/.github/workflows/lint-terraform-module.yml@v0.3.1
+    uses: visiosto/workflows/.github/workflows/lint-terraform-module.yml@v0.3.2
     with:
       terraform-version: ${{ matrix.terraform-version }}
     secrets:
