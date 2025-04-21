@@ -10,16 +10,12 @@ on:
       - "**.tf"
       - .github/workflows/lint.yml
 
-env:
-  GIT_ASKPASS: echo
-  GIT_USERNAME: x-access-token
-  GIT_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
-
 jobs:
   lint:
     strategy:
       matrix:
         terraform-version: ["~1.0.0", "latest"]
-    uses: visiosto/workflows/.github/workflows/lint-terraform-module.yml@v0.1.0
+    uses: visiosto/workflows/.github/workflows/lint-terraform-module.yml@v0.2.0
     with:
       terraform-version: ${{ matrix.terraform-version }}
+      token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
