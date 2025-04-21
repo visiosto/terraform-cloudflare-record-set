@@ -5,7 +5,7 @@ variable "default_ttl" {
 }
 
 variable "records" {
-  description = "A map of DNS records to be created."
+  description = "A map of DNS records to create."
   type = map(map(object({
     name     = optional(string)
     type     = optional(string)
