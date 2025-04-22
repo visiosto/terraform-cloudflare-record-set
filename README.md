@@ -6,7 +6,7 @@ Terraform module to create multiple Cloudflare DNS records in bulk.
 
 | Name                  | Version  |
 | --------------------- | -------- |
-| terraform             | >= 1.9.0 |
+| terraform             | >= 1.2.0 |
 | cloudflare/cloudflare | >= 5.0.0 |
 
 ## Providers
@@ -19,7 +19,7 @@ Terraform module to create multiple Cloudflare DNS records in bulk.
 
 | Name                                 | Version |
 | ------------------------------------ | ------- |
-| visiosto/terraform-cloudflare-record | 0.3.1   |
+| visiosto/terraform-cloudflare-record | 0.3.2   |
 
 ## Resources
 
