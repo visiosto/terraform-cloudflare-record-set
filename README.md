@@ -1,4 +1,4 @@
-# Cloudflare DNS records bulk module
+# Cloudflare DNS record set module
 
 Terraform module to create multiple Cloudflare DNS records in bulk.
 
@@ -32,7 +32,8 @@ No resources.
 | default_ttl | The default TTL for DNS records in seconds | `number` | `1`     |    no    |
 | records     | A map of DNS records to create             | `map`    | `{}`    |   yes    |
 
-Please see [variables.tf](variables.tf) for more details on the `records` variable.
+Please see [variables.tf](variables.tf) for more details on the `records`
+variable.
 
 ## Outputs
 
