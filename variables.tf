@@ -11,7 +11,7 @@ variable "records" {
     type     = optional(string)
     content  = string
     ttl      = optional(number)
-    proxied  = optional(bool)
-    priority = optional(number)
+    proxied  = optional(bool, false)
+    priority = optional(number, 0)
   })))
 }
