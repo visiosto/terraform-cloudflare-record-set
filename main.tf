@@ -23,6 +23,7 @@ module "record" {
   content   = each.value.content
   name      = each.value.name
   ttl       = each.value.ttl
+  priority  = each.value.priority
   proxied   = each.value.proxied
   type      = each.value.type
   zone_name = each.value.zone_name
