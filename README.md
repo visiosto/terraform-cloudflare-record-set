@@ -37,4 +37,6 @@ variable.
 
 ## Outputs
 
-No outputs.
+| Name        | Description                                            |
+| ----------- | ------------------------------------------------------ |
+| record_data | The data that was used to create the records as a map. |
