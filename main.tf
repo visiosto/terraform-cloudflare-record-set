@@ -8,7 +8,7 @@ locals {
         content   = rec.content
         ttl       = lookup(rec, "ttl", null) != null ? lookup(rec, "ttl", null) : var.default_ttl
         proxied   = lookup(rec, "proxied", null)
-        priority  = lookup(rec, "priority", null)
+        priority  = lookup(rec, "priority", 0)
         zone_name = zone_name
       }
     }

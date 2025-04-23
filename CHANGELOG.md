@@ -13,6 +13,14 @@ and this project adheres to
 - Output called `record_data` that has the computed data that was used to create
   the records.
 
+## [0.3.3] - 2025-04-23
+
+### Fixed
+
+- Set `0` as the default value of the `priority` variable to prevent error
+  caused by the `null` value in `terraform-cloudflare-record` as logical
+  operators in Terraform are always evaluated fully.
+
 ## [0.3.2] - 2025-04-23
 
 ### Changed
@@ -50,7 +58,9 @@ and this project adheres to
 - Initial release of the module for creating Cloudflare records in bulk.
 
 [unreleased]:
-  https://github.com/visiosto/terraform-cloudflare-record-set/compare/v0.3.2...HEAD
+  https://github.com/visiosto/terraform-cloudflare-record-set/compare/v0.3.3...HEAD
+[0.3.3]:
+  https://github.com/visiosto/terraform-cloudflare-record-set/compare/v0.3.2...v0.3.3
 [0.3.2]:
   https://github.com/visiosto/terraform-cloudflare-record-set/compare/v0.3.1...v0.3.2
 [0.3.1]:
