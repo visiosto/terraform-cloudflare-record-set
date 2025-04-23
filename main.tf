@@ -28,7 +28,3 @@ module "record" {
   type      = each.value.type
   zone_name = each.value.zone_name
 }
-
-output "created" {
-  value = local.flat_records
-}
