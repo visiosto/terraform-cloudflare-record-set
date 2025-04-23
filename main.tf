@@ -3,8 +3,8 @@ locals {
     for zone_name, zone_map in var.records : {
       for rec_key, rec in zone_map :
       "${zone_name}:${rec_key}" => {
-        name      = coalesce(rec.name, split(":", rec_key)[1])
-        type      = coalesce(rec.type, split(":", rec_key)[0])
+        name      = rec.name == null ? split(":", rec_key)[1] : rec.name
+        type      = rec.type == null ? split(":", rec_key)[0] : rec.type
         content   = rec.content
         ttl       = coalesce(rec.ttl, var.default_ttl)
         proxied   = rec.proxied
