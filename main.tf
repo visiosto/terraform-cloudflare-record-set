@@ -16,7 +16,7 @@ locals {
 }
 
 module "record" {
-  source = "github.com/visiosto/terraform-cloudflare-record?ref=v0.3.2"
+  source = "github.com/visiosto/terraform-cloudflare-record?ref=v0.3.3"
 
   for_each = local.flat_records
 
