@@ -13,6 +13,13 @@ and this project adheres to
 - Output called `record_data` that has the computed data that was used to create
   the records.
 
+## [0.3.5] - 2025-04-23
+
+### Fixed
+
+- Use the conditional operator to set the `name` and `type` of a record type
+  lazily evaluate the dynamic values.
+
 ## [0.3.4] - 2025-04-23
 
 ### Fixed
@@ -65,7 +72,9 @@ and this project adheres to
 - Initial release of the module for creating Cloudflare records in bulk.
 
 [unreleased]:
-  https://github.com/visiosto/terraform-cloudflare-record-set/compare/v0.3.4...HEAD
+  https://github.com/visiosto/terraform-cloudflare-record-set/compare/v0.3.5...HEAD
+[0.3.5]:
+  https://github.com/visiosto/terraform-cloudflare-record-set/compare/v0.3.4...v0.3.5
 [0.3.4]:
   https://github.com/visiosto/terraform-cloudflare-record-set/compare/v0.3.3...v0.3.4
 [0.3.3]:
