@@ -13,6 +13,13 @@ and this project adheres to
 - Output called `record_data` that has the computed data that was used to create
   the records.
 
+## [0.3.4] - 2025-04-23
+
+### Fixed
+
+- Use defaults with correct types in the record map.
+- Look the members of the input record map up correctly.
+
 ## [0.3.3] - 2025-04-23
 
 ### Fixed
@@ -58,7 +65,9 @@ and this project adheres to
 - Initial release of the module for creating Cloudflare records in bulk.
 
 [unreleased]:
-  https://github.com/visiosto/terraform-cloudflare-record-set/compare/v0.3.3...HEAD
+  https://github.com/visiosto/terraform-cloudflare-record-set/compare/v0.3.4...HEAD
+[0.3.4]:
+  https://github.com/visiosto/terraform-cloudflare-record-set/compare/v0.3.3...v0.3.4
 [0.3.3]:
   https://github.com/visiosto/terraform-cloudflare-record-set/compare/v0.3.2...v0.3.3
 [0.3.2]:

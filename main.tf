@@ -3,12 +3,12 @@ locals {
     for zone_name, zone_map in var.records : {
       for rec_key, rec in zone_map :
       "${zone_name}:${rec_key}" => {
-        name      = lookup(rec, "name", null) != null ? lookup(rec, "name", null) : split(":", rec_key)[1]
-        type      = lookup(rec, "type", null) != null ? lookup(rec, "type", null) : split(":", rec_key)[0]
+        name      = coalesce(rec.name, split(":", rec_key)[1])
+        type      = coalesce(rec.type, split(":", rec_key)[0])
         content   = rec.content
-        ttl       = lookup(rec, "ttl", null) != null ? lookup(rec, "ttl", null) : var.default_ttl
-        proxied   = lookup(rec, "proxied", null)
-        priority  = lookup(rec, "priority", 0)
+        ttl       = coalesce(rec.ttl, var.default_ttl)
+        proxied   = rec.proxied
+        priority  = rec.priority
         zone_name = zone_name
       }
     }
