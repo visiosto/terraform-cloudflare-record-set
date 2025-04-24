@@ -1,15 +1,10 @@
 version: 2
 updates:
-  - package-ecosystem: terraform
+  - package-ecosystem: github-actions
     directory: /
-    registries:
-      - private-github
     schedule:
       interval: weekly
-
-registries:
-  private-github:
-    type: git
-    url: https://github.com
-    username: x-access-token
-    password: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+  - package-ecosystem: terraform
+    directory: /
+    schedule:
+      interval: weekly
